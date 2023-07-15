@@ -1006,7 +1006,7 @@
                             <li class="breadcrumb-item flex items-center">
                                 <span class="inline-block bg-text3/60 w-[4px] h-[4px] rounded-full"></span>
                             </li>
-                            <li class="breadcrumb-item text-muted">Product List</li>
+                            <li class="breadcrumb-item text-muted">Product Grid</li>
 
                         </ul>
                     </div>
@@ -1014,7 +1014,7 @@
 
                 <!-- table -->
                 <div class="bg-white rounded-t-md rounded-b-md shadow-xs py-4">
-                    <div class="tp-search-box flex items-center justify-between px-8 py-8">
+                    <div class="tp-search-box flex items-center justify-between px-8 py-8 flex-wrap">
                         <div class="search-input relative">
                             <input
                                 class="input h-[44px] w-full pl-14"
@@ -1046,14 +1046,15 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="flex justify-end space-x-6">
+                        <div class="flex sm:justify-end sm:space-x-6 flex-wrap">
                             <div class="search-select mr-3 flex items-center space-x-3 ">
-                                <span class="text-tiny inline-block leading-none -translate-y-[2px]">Status : </span>
+                                <span class="text-tiny inline-block leading-none -translate-y-[2px]">Categories :
+                                </span>
                                 <select>
-                                    <option>Active</option>
-                                    <option>In Active</option>
-                                    <option>Scheduled</option>
-                                    <option>Low Stock</option>
+                                    <option>Shoes</option>
+                                    <option>Shirt</option>
+                                    <option>Bags</option>
+                                    <option>Denim</option>
                                     <option>Out of Stock</option>
                                 </select>
                             </div>
@@ -1065,120 +1066,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="relative overflow-x-auto  mx-8">
-                        <table class="w-full text-base text-left text-gray-500">
-
-                            <thead class="bg-white">
-                                <tr class="border-b border-gray6 text-tiny">
-                                    <th
-                                        scope="col"
-                                        class=" py-3 text-tiny text-text2 uppercase font-semibold w-[3%]"
-                                    >
-                                        <div class="tp-checkbox -translate-y-[3px]">
-                                            <input
-                                                id="selectAllProduct"
-                                                type="checkbox"
-                                            >
-                                            <label for="selectAllProduct"></label>
-                                        </div>
-                                    </th>
-                                    <th
-                                        scope="col"
-                                        class="pr-8 py-3 text-tiny text-text2 uppercase font-semibold"
-                                    >
-                                        Product
-                                    </th>
-                                    <th
-                                        scope="col"
-                                        class="px-3 py-3 text-tiny text-text2 uppercase font-semibold w-[170px] text-end"
-                                    >
-                                        SKU
-                                    </th>
-                                    <th
-                                        scope="col"
-                                        class="px-3 py-3 text-tiny text-text2 uppercase font-semibold w-[170px] text-end"
-                                    >
-                                        QTY
-                                    </th>
-                                    <th
-                                        scope="col"
-                                        class="px-3 py-3 text-tiny text-text2 uppercase font-semibold w-[170px] text-end"
-                                    >
-                                        Price
-                                    </th>
-                                    <th
-                                        scope="col"
-                                        class="px-3 py-3 text-tiny text-text2 uppercase font-semibold w-[170px] text-end"
-                                    >
-                                        Rating
-                                    </th>
-                                    <th
-                                        scope="col"
-                                        class="px-3 py-3 text-tiny text-text2 uppercase font-semibold w-[170px] text-end"
-                                    >
-                                        Status
-                                    </th>
-                                    <th
-                                        scope="col"
-                                        class="px-9 py-3 text-tiny text-text2 uppercase  font-semibold w-[12%] text-end"
-                                    >
-                                        Action
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
-                                    <td class="pr-3  whitespace-nowrap">
-                                        <div class="tp-checkbox">
-                                            <input
-                                                id="product-1"
-                                                type="checkbox"
-                                            >
-                                            <label for="product-1"></label>
-                                        </div>
-                                    </td>
-                                    <td class="pr-8 py-5 whitespace-nowrap">
-                                        <a
-                                            href="#"
-                                            class="flex items-center space-x-5"
+                    <div class="relative mx-8 mb-5">
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 ">
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-1.jpg"
+                                            alt=""
                                         >
-                                            <img
-                                                class="w-[60px] h-[60px] rounded-md"
-                                                src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-1.jpg"
-                                                alt=""
-                                            >
-                                            <span
-                                                class="font-medium text-heading text-hover-primary transition">Whitetails
-                                                Women's Open Sky</span>
-                                        </a>
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        #479063DR
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        37
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        $171.00
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-heading text-end">
-                                        <div class="flex justify-end items-center space-x-1 text-tiny">
-                                            <span class="text-yellow flex items-center space-x-1">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="px-3 py-3 text-end">
-                                        <span
-                                            class="text-[11px]  text-success px-3 py-1 rounded-md leading-none bg-success/10 font-medium text-end"
-                                        >Active</span>
-                                    </td>
-                                    <td class="px-9 py-3 text-end">
-                                        <div class="flex items-center justify-end space-x-2">
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
                                             <div
                                                 class="relative"
                                                 x-data="{ editTooltip: false }"
@@ -1207,12 +1108,12 @@
                                                 </button>
                                                 <div
                                                     x-show="editTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Edit</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div
@@ -1244,69 +1145,48 @@
                                                 </button>
                                                 <div
                                                     x-show="deleteTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Delete</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Whitetails Women's Open Sky</a>
 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
-                                    <td class=" pr-3  whitespace-nowrap">
-                                        <div class="tp-checkbox">
-                                            <input
-                                                id="product-2"
-                                                type="checkbox"
-                                            >
-                                            <label for="product-2"></label>
-                                        </div>
-                                    </td>
-                                    <td class="pr-8 py-5 whitespace-nowrap">
-                                        <a
-                                            href="#"
-                                            class="flex items-center space-x-5"
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$170.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-1.jpg"
+                                            alt=""
                                         >
-                                            <img
-                                                class="w-[60px] h-[60px] rounded-md"
-                                                src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-1.jpg"
-                                                alt=""
-                                            >
-                                            <span class="font-medium text-heading text-hover-primary transition">Simple
-                                                Modern School Boys</span>
-                                        </a>
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        #DF7B2B64
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        124
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        $98.00
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-heading text-end">
-                                        <div class="flex justify-end items-center space-x-1 text-tiny">
-                                            <span class="text-yellow flex items-center space-x-1">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="px-3 py-3 text-end">
-                                        <span
-                                            class="text-[11px]  text-danger px-3 py-1 rounded-md leading-none bg-danger/10 font-medium text-end"
-                                        >In Active</span>
-                                    </td>
-                                    <td class="px-9 py-3 text-end">
-                                        <div class="flex items-center justify-end space-x-2">
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
                                             <div
                                                 class="relative"
                                                 x-data="{ editTooltip: false }"
@@ -1335,12 +1215,12 @@
                                                 </button>
                                                 <div
                                                     x-show="editTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Edit</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div
@@ -1372,71 +1252,48 @@
                                                 </button>
                                                 <div
                                                     x-show="deleteTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Delete</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Simple Modern School Boys</a>
 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
-                                    <td class=" pr-3  whitespace-nowrap">
-                                        <div class="tp-checkbox">
-                                            <input
-                                                id="product-3"
-                                                type="checkbox"
-                                            >
-                                            <label for="product-3"></label>
-                                        </div>
-                                    </td>
-                                    <td class="pr-8 py-5 whitespace-nowrap">
-                                        <a
-                                            href="#"
-                                            class="flex items-center space-x-5"
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$45.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-1.jpg"
+                                            alt=""
                                         >
-                                            <img
-                                                class="w-[60px] h-[60px] rounded-md"
-                                                src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-1.jpg"
-                                                alt=""
-                                            >
-                                            <span class="font-medium text-heading text-hover-primary transition">Women's
-                                                Essentials Convertible</span>
-                                        </a>
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        #373F9567
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        <span
-                                            class="text-[11px] -translate-y-[1px] inline-block  text-warning px-3 py-1 rounded-md leading-none bg-warning/10 font-medium text-end"
-                                        >Low Stock</span> 05
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        $56.99
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-heading text-end">
-                                        <div class="flex justify-end items-center space-x-1 text-tiny">
-                                            <span class="text-yellow flex items-center space-x-1">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="px-3 py-3 text-end">
-                                        <span
-                                            class="text-[11px]  text-info px-3 py-1 rounded-md leading-none bg-info/10 font-medium text-end"
-                                        >Scheduled</span>
-                                    </td>
-                                    <td class="px-9 py-3 text-end">
-                                        <div class="flex items-center justify-end space-x-2">
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
                                             <div
                                                 class="relative"
                                                 x-data="{ editTooltip: false }"
@@ -1465,12 +1322,12 @@
                                                 </button>
                                                 <div
                                                     x-show="editTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Edit</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div
@@ -1502,71 +1359,48 @@
                                                 </button>
                                                 <div
                                                     x-show="deleteTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Delete</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Women's Essentials Shoes</a>
 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
-                                    <td class=" pr-3  whitespace-nowrap">
-                                        <div class="tp-checkbox">
-                                            <input
-                                                id="product-4"
-                                                type="checkbox"
-                                            >
-                                            <label for="product-4"></label>
-                                        </div>
-                                    </td>
-                                    <td class="pr-8 py-5 whitespace-nowrap">
-                                        <a
-                                            href="#"
-                                            class="flex items-center space-x-5"
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$350.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-1.jpg"
+                                            alt=""
                                         >
-                                            <img
-                                                class="w-[60px] h-[60px] rounded-md"
-                                                src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-1.jpg"
-                                                alt=""
-                                            >
-                                            <span class="font-medium text-heading text-hover-primary transition">Calvin
-                                                Klein Gabrianna Novelty</span>
-                                        </a>
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        #C174E363
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        <span
-                                            class="text-[11px] -translate-y-[1px] inline-block  text-danger px-3 py-1 rounded-md leading-none bg-danger/10 font-medium text-end"
-                                        >Out Of Stock</span> 00
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        $340.18
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-heading text-end">
-                                        <div class="flex justify-end items-center space-x-1 text-tiny">
-                                            <span class="text-yellow flex items-center space-x-1">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="px-3 py-3 text-end">
-                                        <span
-                                            class="text-[11px]  text-success px-3 py-1 rounded-md leading-none bg-success/10 font-medium text-end"
-                                        >Active</span>
-                                    </td>
-                                    <td class="px-9 py-3 text-end">
-                                        <div class="flex items-center justify-end space-x-2">
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
                                             <div
                                                 class="relative"
                                                 x-data="{ editTooltip: false }"
@@ -1595,12 +1429,12 @@
                                                 </button>
                                                 <div
                                                     x-show="editTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Edit</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div
@@ -1632,69 +1466,48 @@
                                                 </button>
                                                 <div
                                                     x-show="deleteTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Delete</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Calvin Gabrianna Novelty</a>
 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
-                                    <td class=" pr-3  whitespace-nowrap">
-                                        <div class="tp-checkbox">
-                                            <input
-                                                id="product-5"
-                                                type="checkbox"
-                                            >
-                                            <label for="product-5"></label>
-                                        </div>
-                                    </td>
-                                    <td class="pr-8 py-5 whitespace-nowrap">
-                                        <a
-                                            href="#"
-                                            class="flex items-center space-x-5"
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$240.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-5.jpg"
+                                            alt=""
                                         >
-                                            <img
-                                                class="w-[60px] h-[60px] rounded-md"
-                                                src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-5.jpg"
-                                                alt=""
-                                            >
-                                            <span class="font-medium text-heading text-hover-primary transition">Tommy
-                                                Hilfiger Women’s Jaden</span>
-                                        </a>
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        #26BC663E
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        57
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        $224.00
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-heading text-end">
-                                        <div class="flex justify-end items-center space-x-1 text-tiny">
-                                            <span class="text-yellow flex items-center space-x-1">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="px-3 py-3 text-end">
-                                        <span
-                                            class="text-[11px]  text-success px-3 py-1 rounded-md leading-none bg-success/10 font-medium text-end"
-                                        >Active</span>
-                                    </td>
-                                    <td class="px-9 py-3 text-end">
-                                        <div class="flex items-center justify-end space-x-2">
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
                                             <div
                                                 class="relative"
                                                 x-data="{ editTooltip: false }"
@@ -1723,12 +1536,12 @@
                                                 </button>
                                                 <div
                                                     x-show="editTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Edit</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div
@@ -1760,69 +1573,48 @@
                                                 </button>
                                                 <div
                                                     x-show="deleteTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Delete</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Tommy Hilfiger Jaden</a>
 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
-                                    <td class=" pr-3  whitespace-nowrap">
-                                        <div class="tp-checkbox">
-                                            <input
-                                                id="product-6"
-                                                type="checkbox"
-                                            >
-                                            <label for="product-6"></label>
-                                        </div>
-                                    </td>
-                                    <td class="pr-8 py-5 whitespace-nowrap">
-                                        <a
-                                            href="#"
-                                            class="flex items-center space-x-5"
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$160.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-6.jpg"
+                                            alt=""
                                         >
-                                            <img
-                                                class="w-[60px] h-[60px] rounded-md"
-                                                src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-6.jpg"
-                                                alt=""
-                                            >
-                                            <span class="font-medium text-heading text-hover-primary transition">Govicta
-                                                Men's Shoes Leather</span>
-                                        </a>
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        #AD6ACDB9
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        45
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        $47.00
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-heading text-end">
-                                        <div class="flex justify-end items-center space-x-1 text-tiny">
-                                            <span class="text-yellow flex items-center space-x-1">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="px-3 py-3 text-end">
-                                        <span
-                                            class="text-[11px]  text-success px-3 py-1 rounded-md leading-none bg-success/10 font-medium text-end"
-                                        >Active</span>
-                                    </td>
-                                    <td class="px-9 py-3 text-end">
-                                        <div class="flex items-center justify-end space-x-2">
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
                                             <div
                                                 class="relative"
                                                 x-data="{ editTooltip: false }"
@@ -1851,12 +1643,12 @@
                                                 </button>
                                                 <div
                                                     x-show="editTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Edit</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div
@@ -1888,70 +1680,48 @@
                                                 </button>
                                                 <div
                                                     x-show="deleteTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Delete</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Govicta Men's Shoes Leather</a>
 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
-                                    <td class=" pr-3  whitespace-nowrap">
-                                        <div class="tp-checkbox">
-                                            <input
-                                                id="product-7"
-                                                type="checkbox"
-                                            >
-                                            <label for="product-7"></label>
-                                        </div>
-                                    </td>
-                                    <td class="pr-8 py-5 whitespace-nowrap">
-                                        <a
-                                            href="#"
-                                            class="flex items-center space-x-5"
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$75.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-7.jpg"
+                                            alt=""
                                         >
-                                            <img
-                                                class="w-[60px] h-[60px] rounded-md"
-                                                src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-7.jpg"
-                                                alt=""
-                                            >
-                                            <span
-                                                class="font-medium text-heading text-hover-primary transition">Legendary
-                                                Whitetails Men's.</span>
-                                        </a>
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        #3F6CBB65
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        78
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        $29.99
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-heading text-end">
-                                        <div class="flex justify-end items-center space-x-1 text-tiny">
-                                            <span class="text-yellow flex items-center space-x-1">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="px-3 py-3 text-end">
-                                        <span
-                                            class="text-[11px]  text-info px-3 py-1 rounded-md leading-none bg-info/10 font-medium text-end"
-                                        >Scheduled</span>
-                                    </td>
-                                    <td class="px-9 py-3 text-end">
-                                        <div class="flex items-center justify-end space-x-2">
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
                                             <div
                                                 class="relative"
                                                 x-data="{ editTooltip: false }"
@@ -1980,12 +1750,12 @@
                                                 </button>
                                                 <div
                                                     x-show="editTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Edit</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div
@@ -2017,70 +1787,48 @@
                                                 </button>
                                                 <div
                                                     x-show="deleteTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Delete</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Legendary Whitetails Men's.</a>
 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
-                                    <td class=" pr-3  whitespace-nowrap">
-                                        <div class="tp-checkbox">
-                                            <input
-                                                id="product-8"
-                                                type="checkbox"
-                                            >
-                                            <label for="product-8"></label>
-                                        </div>
-                                    </td>
-                                    <td class="pr-8 py-5 whitespace-nowrap">
-                                        <a
-                                            href="#"
-                                            class="flex items-center space-x-5"
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$55.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-8.jpg"
+                                            alt=""
                                         >
-                                            <img
-                                                class="w-[60px] h-[60px] rounded-md"
-                                                src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-8.jpg"
-                                                alt=""
-                                            >
-                                            <span
-                                                class="font-medium text-heading text-hover-primary transition">Backpack,
-                                                School Bag.</span>
-                                        </a>
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        #8054F82C
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        104
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-[#55585B] text-end">
-                                        $99.99
-                                    </td>
-                                    <td class="px-3 py-3 font-normal text-heading text-end">
-                                        <div class="flex justify-end items-center space-x-1 text-tiny">
-                                            <span class="text-yellow flex items-center space-x-1">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="px-3 py-3 text-end">
-                                        <span
-                                            class="text-[11px]  text-success px-3 py-1 rounded-md leading-none bg-success/10 font-medium text-end"
-                                        >Active</span>
-                                    </td>
-                                    <td class="px-9 py-3 text-end">
-                                        <div class="flex items-center justify-end space-x-2">
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
                                             <div
                                                 class="relative"
                                                 x-data="{ editTooltip: false }"
@@ -2109,12 +1857,12 @@
                                                 </button>
                                                 <div
                                                     x-show="editTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Edit</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div
@@ -2146,25 +1894,256 @@
                                                 </button>
                                                 <div
                                                     x-show="deleteTooltip"
-                                                    class="flex flex-col items-center z-50 absolute left-1/2 -translate-x-1/2 bottom-full mb-1"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
                                                 >
                                                     <span
                                                         class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
                                                     >Delete</span>
-                                                    <div class="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
-
                                         </div>
-                                    </td>
-                                </tr>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Backpack, School Bag.</a>
 
-                            </tbody>
-                        </table>
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$40.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-9.jpg"
+                                            alt=""
+                                        >
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
+                                            <div
+                                                class="relative"
+                                                x-data="{ editTooltip: false }"
+                                            >
+                                                <button
+                                                    class="w-10 h-10 leading-10 text-tiny bg-success text-white rounded-md hover:bg-green-600"
+                                                    x-on:mouseenter="editTooltip = true"
+                                                    x-on:mouseleave="editTooltip = false"
+                                                >
+                                                    <svg
+                                                        class="-translate-y-px"
+                                                        height="12"
+                                                        viewBox="0 0 492.49284 492"
+                                                        width="12"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            fill="currentColor"
+                                                            d="m304.140625 82.472656-270.976563 270.996094c-1.363281 1.367188-2.347656 3.09375-2.816406 4.949219l-30.035156 120.554687c-.898438 3.628906.167969 7.488282 2.816406 10.136719 2.003906 2.003906 4.734375 3.113281 7.527344 3.113281.855469 0 1.730469-.105468 2.582031-.320312l120.554688-30.039063c1.878906-.46875 3.585937-1.449219 4.949219-2.8125l271-270.976562zm0 0"
+                                                        />
+                                                        <path
+                                                            fill="currentColor"
+                                                            d="m476.875 45.523438-30.164062-30.164063c-20.160157-20.160156-55.296876-20.140625-75.433594 0l-36.949219 36.949219 105.597656 105.597656 36.949219-36.949219c10.070312-10.066406 15.617188-23.464843 15.617188-37.714843s-5.546876-27.648438-15.617188-37.71875zm0 0"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <div
+                                                    x-show="editTooltip"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
+                                                >
+                                                    <span
+                                                        class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
+                                                    >Edit</span>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="relative"
+                                                x-data="{ deleteTooltip: false }"
+                                            >
+                                                <button
+                                                    class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
+                                                    x-on:mouseenter="deleteTooltip = true"
+                                                    x-on:mouseleave="deleteTooltip = false"
+                                                >
+                                                    <svg
+                                                        class="-translate-y-px"
+                                                        width="14"
+                                                        height="14"
+                                                        viewBox="0 0 20 22"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M19.0697 4.23C17.4597 4.07 15.8497 3.95 14.2297 3.86V3.85L14.0097 2.55C13.8597 1.63 13.6397 0.25 11.2997 0.25H8.67967C6.34967 0.25 6.12967 1.57 5.96967 2.54L5.75967 3.82C4.82967 3.88 3.89967 3.94 2.96967 4.03L0.929669 4.23C0.509669 4.27 0.209669 4.64 0.249669 5.05C0.289669 5.46 0.649669 5.76 1.06967 5.72L3.10967 5.52C8.34967 5 13.6297 5.2 18.9297 5.73C18.9597 5.73 18.9797 5.73 19.0097 5.73C19.3897 5.73 19.7197 5.44 19.7597 5.05C19.7897 4.64 19.4897 4.27 19.0697 4.23Z"
+                                                            fill="currentColor"
+                                                        />
+                                                        <path
+                                                            d="M17.2297 7.14C16.9897 6.89 16.6597 6.75 16.3197 6.75H3.67975C3.33975 6.75 2.99975 6.89 2.76975 7.14C2.53975 7.39 2.40975 7.73 2.42975 8.08L3.04975 18.34C3.15975 19.86 3.29975 21.76 6.78975 21.76H13.2097C16.6997 21.76 16.8398 19.87 16.9497 18.34L17.5697 8.09C17.5897 7.73 17.4597 7.39 17.2297 7.14ZM11.6597 16.75H8.32975C7.91975 16.75 7.57975 16.41 7.57975 16C7.57975 15.59 7.91975 15.25 8.32975 15.25H11.6597C12.0697 15.25 12.4097 15.59 12.4097 16C12.4097 16.41 12.0697 16.75 11.6597 16.75ZM12.4997 12.75H7.49975C7.08975 12.75 6.74975 12.41 6.74975 12C6.74975 11.59 7.08975 11.25 7.49975 11.25H12.4997C12.9097 11.25 13.2497 11.59 13.2497 12C13.2497 12.41 12.9097 12.75 12.4997 12.75Z"
+                                                            fill="currentColor"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <div
+                                                    x-show="deleteTooltip"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
+                                                >
+                                                    <span
+                                                        class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
+                                                    >Delete</span>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Red dotted women's shirt.</a>
+
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$99.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md bg-white border-gray6 border">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img
+                                            class="w-full"
+                                            src="https://weblearnbd.net/tphtml/ebazer/../assets/img/product/prodcut-10.jpg"
+                                            alt=""
+                                        >
+                                    </a>
+                                    <div class="absolute top-5 right-5 z-10">
+                                        <div class="flex flex-col items-center justify-center space-y-2">
+                                            <div
+                                                class="relative"
+                                                x-data="{ editTooltip: false }"
+                                            >
+                                                <button
+                                                    class="w-10 h-10 leading-10 text-tiny bg-success text-white rounded-md hover:bg-green-600"
+                                                    x-on:mouseenter="editTooltip = true"
+                                                    x-on:mouseleave="editTooltip = false"
+                                                >
+                                                    <svg
+                                                        class="-translate-y-px"
+                                                        height="12"
+                                                        viewBox="0 0 492.49284 492"
+                                                        width="12"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            fill="currentColor"
+                                                            d="m304.140625 82.472656-270.976563 270.996094c-1.363281 1.367188-2.347656 3.09375-2.816406 4.949219l-30.035156 120.554687c-.898438 3.628906.167969 7.488282 2.816406 10.136719 2.003906 2.003906 4.734375 3.113281 7.527344 3.113281.855469 0 1.730469-.105468 2.582031-.320312l120.554688-30.039063c1.878906-.46875 3.585937-1.449219 4.949219-2.8125l271-270.976562zm0 0"
+                                                        />
+                                                        <path
+                                                            fill="currentColor"
+                                                            d="m476.875 45.523438-30.164062-30.164063c-20.160157-20.160156-55.296876-20.140625-75.433594 0l-36.949219 36.949219 105.597656 105.597656 36.949219-36.949219c10.070312-10.066406 15.617188-23.464843 15.617188-37.714843s-5.546876-27.648438-15.617188-37.71875zm0 0"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <div
+                                                    x-show="editTooltip"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
+                                                >
+                                                    <span
+                                                        class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
+                                                    >Edit</span>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="relative"
+                                                x-data="{ deleteTooltip: false }"
+                                            >
+                                                <button
+                                                    class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
+                                                    x-on:mouseenter="deleteTooltip = true"
+                                                    x-on:mouseleave="deleteTooltip = false"
+                                                >
+                                                    <svg
+                                                        class="-translate-y-px"
+                                                        width="14"
+                                                        height="14"
+                                                        viewBox="0 0 20 22"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M19.0697 4.23C17.4597 4.07 15.8497 3.95 14.2297 3.86V3.85L14.0097 2.55C13.8597 1.63 13.6397 0.25 11.2997 0.25H8.67967C6.34967 0.25 6.12967 1.57 5.96967 2.54L5.75967 3.82C4.82967 3.88 3.89967 3.94 2.96967 4.03L0.929669 4.23C0.509669 4.27 0.209669 4.64 0.249669 5.05C0.289669 5.46 0.649669 5.76 1.06967 5.72L3.10967 5.52C8.34967 5 13.6297 5.2 18.9297 5.73C18.9597 5.73 18.9797 5.73 19.0097 5.73C19.3897 5.73 19.7197 5.44 19.7597 5.05C19.7897 4.64 19.4897 4.27 19.0697 4.23Z"
+                                                            fill="currentColor"
+                                                        />
+                                                        <path
+                                                            d="M17.2297 7.14C16.9897 6.89 16.6597 6.75 16.3197 6.75H3.67975C3.33975 6.75 2.99975 6.89 2.76975 7.14C2.53975 7.39 2.40975 7.73 2.42975 8.08L3.04975 18.34C3.15975 19.86 3.29975 21.76 6.78975 21.76H13.2097C16.6997 21.76 16.8398 19.87 16.9497 18.34L17.5697 8.09C17.5897 7.73 17.4597 7.39 17.2297 7.14ZM11.6597 16.75H8.32975C7.91975 16.75 7.57975 16.41 7.57975 16C7.57975 15.59 7.91975 15.25 8.32975 15.25H11.6597C12.0697 15.25 12.4097 15.59 12.4097 16C12.4097 16.41 12.0697 16.75 11.6597 16.75ZM12.4997 12.75H7.49975C7.08975 12.75 6.74975 12.41 6.74975 12C6.74975 11.59 7.08975 11.25 7.49975 11.25H12.4997C12.9097 11.25 13.2497 11.59 13.2497 12C13.2497 12.41 12.9097 12.75 12.4997 12.75Z"
+                                                            fill="currentColor"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <div
+                                                    x-show="deleteTooltip"
+                                                    class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]"
+                                                >
+                                                    <span
+                                                        class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block"
+                                                    >Delete</span>
+                                                    <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-5">
+                                    <a
+                                        href="#"
+                                        class="text-lg font-normal text-heading text-hover-primary mb-2 inline-block leading-none"
+                                    >Full Sleeve Shirt(Pink)</a>
+
+                                    <div class="flex items-center space-x-1 text-tiny mb-5">
+                                        <span class="text-yellow flex items-center space-x-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="leading-none mb-2">
+                                        <span class="text-base font-medium text-black">$29.50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex justify-between items-center flex-wrap mx-8">
                         <p class="mb-0 text-tiny">Showing 10 Prdouct of 120</p>
-                        <div class="pagination py-3 flex justify-end items-center  mx-8">
+                        <div class="pagination py-3 flex justify-end items-center ">
                             <a
                                 href="#"
                                 class="inline-block rounded-md w-10 h-10 text-center leading-[33px] border border-gray mr-2 last:mr-0 hover:bg-theme hover:text-white hover:border-theme"
