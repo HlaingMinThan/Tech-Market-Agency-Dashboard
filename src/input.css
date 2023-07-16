@@ -111,15 +111,6 @@ abbr:where([title]) {
           text-decoration: underline dotted;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply text-base font-normal
-}
-
 a {
   @apply text-current no-underline
 }
@@ -152,4 +143,8 @@ button,
 [type='reset'],
 [type='submit'] {
   @apply appearance-none bg-transparent
+}
+
+.admin-btn{
+  @apply inline-flex items-center rounded-md bg-blue-500 py-1 px-5 text-sm font-medium tracking-tight text-white
 }

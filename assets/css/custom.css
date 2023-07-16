@@ -1,3 +1,12 @@
+summary {
+  display: list-item;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
 .progress-bar {
     position: relative;
     overflow: hidden;
@@ -71,6 +80,14 @@
     -o-transition: all 0.2s 0s ease-out;
     transition: all 0.2s 0s ease-out;
     border-radius: 4px;
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #55585B;
+  margin-bottom: 15px;
 }
 
 .admin-checkbox label::before {
@@ -390,4 +407,8 @@
     display: inline-block;
     cursor: pointer;
     font-weight: 400;
+}
+
+progress {
+  vertical-align: baseline;
 }

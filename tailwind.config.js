@@ -6,6 +6,7 @@ module.exports = {
             fontSize: {
                 tiny: '12px',
                 base: '14px',
+                small: '80%'
             },
             fontFamily: {
                 'sans': ["main-font"]
