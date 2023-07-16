@@ -10,8 +10,12 @@ html, body {
   @apply font-poppins font-normal text-base leading-6 text-gray-600
 }
 
-h1, h2, h3, h4, h5, h6{
-  @apply font-poppins font-medium leading-tight mb-4 text-black
+:-moz-focusring {
+  @apply outline-none
+}
+
+:-moz-ui-invalid {
+  @apply shadow-none
 }
 
 .admin-main-btn {
@@ -27,19 +31,7 @@ input,
 optgroup,
 select,
 textarea {
-  @apply font-inherit text-base font-normal leading-normal text-inherit m-0 p-0
-}
-
-button,
-select {
-  @apply text-transform-none
-}
-
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-  @apply bg-transparent appearance-none border-none
+  @apply bg-transparent appearance-none border-none font-inherit text-base font-normal leading-normal cursor-pointer text-inherit text-transform-none
 }
 
 summary {
@@ -65,11 +57,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 input::placeholder,
 textarea::placeholder {
   @apply text-[#9ca3af]
-}
-
-button,
-[role="button"] {
-  @apply cursor-pointer
 }
 
 :disabled {
@@ -101,6 +88,7 @@ html {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-feature-settings: normal;
 }
+
 
 hr {
   @apply h-0 text-inherit border-t-[1px]
