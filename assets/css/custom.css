@@ -432,14 +432,6 @@ progress {
   --tw-content: '';
 }
 
-/*
-1. Use a consistent sensible line-height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
-5. Use the user's configured `sans` font-feature-settings by default.
-*/
-
 html {
   line-height: 1.5;
   /* 1 */
@@ -677,30 +669,6 @@ Correct the cursor style of increment and decrement buttons in Safari.
   /* 2 */
 }
 
-/*
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
-*/
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/*
-Add the correct display in Chrome and Safari.
-*/
-
 summary {
   display: list-item;
 }
@@ -750,8 +718,3 @@ object {
   vertical-align: middle;
 }
 
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
