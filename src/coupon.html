@@ -57,7 +57,7 @@
 
     <!--  -->
     <div
-        class="tp-main-wrapper bg-slate-100 h-screen"
+        class="admin-main-wrapper bg-slate-100 h-screen"
         x-data="{ sideMenu: false }"
     >
         <aside
@@ -548,7 +548,7 @@
         > </div>
 
         <div
-            class="tp-main-content lg:ml-[250px] xl:ml-[300px] w-[calc(100% - 300px)]"
+            class="admin-main-content lg:ml-[250px] xl:ml-[300px] w-[calc(100% - 300px)]"
             x-data="{ searchOverlay: false }"
         >
 
@@ -1015,7 +1015,7 @@
                 <div class="bg-white rounded-t-md rounded-b-md shadow-xs py-4">
                     <div class="overflow-scroll 2xl:overflow-visible">
                         <div class="w-[1500px] xl:w-full">
-                            <div class="tp-search-box flex items-center justify-between px-8 py-8">
+                            <div class="admin-search-box flex items-center justify-between px-8 py-8">
                                 <div class="search-input relative">
                                     <input
                                         class="input h-[44px] w-full pl-14"
@@ -1074,7 +1074,7 @@
                                                 scope="col"
                                                 class=" py-3 text-tiny text-text2 uppercase font-semibold w-[3%]"
                                             >
-                                                <div class="tp-checkbox -translate-y-[3px]">
+                                                <div class="admin-checkbox -translate-y-[3px]">
                                                     <input
                                                         id="selectAllProduct"
                                                         type="checkbox"
@@ -1135,7 +1135,7 @@
                                     <tbody>
                                         <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
                                             <td class="pr-3  whitespace-nowrap">
-                                                <div class="tp-checkbox">
+                                                <div class="admin-checkbox">
                                                     <input
                                                         id="product-1"
                                                         type="checkbox"
@@ -1255,7 +1255,7 @@
                                         </tr>
                                         <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
                                             <td class="pr-3  whitespace-nowrap">
-                                                <div class="tp-checkbox">
+                                                <div class="admin-checkbox">
                                                     <input
                                                         id="product-2"
                                                         type="checkbox"
@@ -1375,7 +1375,7 @@
                                         </tr>
                                         <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
                                             <td class="pr-3  whitespace-nowrap">
-                                                <div class="tp-checkbox">
+                                                <div class="admin-checkbox">
                                                     <input
                                                         id="product-3"
                                                         type="checkbox"
@@ -1495,7 +1495,7 @@
                                         </tr>
                                         <tr class="bg-white border-b border-gray6 last:border-0 text-start mx-9">
                                             <td class="pr-3  whitespace-nowrap">
-                                                <div class="tp-checkbox">
+                                                <div class="admin-checkbox">
                                                     <input
                                                         id="product-4"
                                                         type="checkbox"
@@ -1772,7 +1772,7 @@
                             <p class="mb-4 text-base text-black">Discount Type<span class="text-red">*</span></p>
 
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5 mx-6">
-                                <div class="tp-checkbox flex items-center">
+                                <div class="admin-checkbox flex items-center">
                                     <input
                                         id="fixedPriceCoupon"
                                         type="radio"
@@ -1784,7 +1784,7 @@
                                         x-on:click="priceData = 1"
                                     >Fixed Price</label>
                                 </div>
-                                <div class="tp-checkbox flex items-center">
+                                <div class="admin-checkbox flex items-center">
                                     <input
                                         id="percentPriceCoupon1"
                                         type="radio"
@@ -1834,7 +1834,7 @@
                         >
                             <p class="mb-4 text-base text-black">Publish <span class="text-red">*</span></p>
                             <div class="grid grid-cols-2 gap-4 mb-5 mx-6">
-                                <div class="tp-checkbox flex items-center">
+                                <div class="admin-checkbox flex items-center">
                                     <input
                                         id="publishInput"
                                         type="radio"
@@ -1846,7 +1846,7 @@
                                         x-on:click="publishdata = 1"
                                     >Now</label>
                                 </div>
-                                <div class="tp-checkbox flex items-center">
+                                <div class="admin-checkbox flex items-center">
                                     <input
                                         id="publishInput1"
                                         type="radio"

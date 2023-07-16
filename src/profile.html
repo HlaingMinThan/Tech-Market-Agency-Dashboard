@@ -56,10 +56,10 @@
 <body>
 
     <div
-        class="tp-main-wrapper bg-slate-100 h-screen"
+        class="admin-main-wrapper bg-slate-100 h-screen"
         x-data="{ sideMenu: false }"
     >
-        <aside
+         <aside
             class="w-[300px] lg:w-[250px] xl:w-[300px] border-r border-gray overflow-y-scroll sidebar-scrollbar fixed left-0 top-0 h-full bg-white z-50 transition-transform duration-300"
             :class="sideMenu ? 'translate-x-[0px]' : ' -translate-x-[300px] lg:translate-x-[0]'"
         >
@@ -547,7 +547,7 @@
         > </div>
 
         <div
-            class="tp-main-content lg:ml-[250px] xl:ml-[300px] w-[calc(100% - 300px)]"
+            class="admin-main-content lg:ml-[250px] xl:ml-[300px] w-[calc(100% - 300px)]"
             x-data="{ searchOverlay: false }"
         >
 
@@ -1120,7 +1120,7 @@
                                         </div>
                                         <div class="mb-5 profile-gender-select select-bordered">
                                             <p class="mb-0 text-base text-black">Gender </p>
-                                            <select>
+                                            <select class="input w-full h-[49px] rounded-md border border-gray6 px-6 text-base text-black">
                                                 <option
                                                     value=""
                                                     selected
@@ -1148,21 +1148,21 @@
                                 <h5 class="text-xl mb-6">Notification</h5>
 
                                 <div class="space-y-3 flex flex-col">
-                                    <div class="tp-checkbox flex items-center mb-3 sm:mb-0">
+                                    <div class="admin-checkbox flex items-center mb-3 sm:mb-0">
                                         <input
                                             id="follows"
                                             type="checkbox"
                                         >
                                         <label for="follows">Like & Follows Notifications</label>
                                     </div>
-                                    <div class="tp-checkbox flex items-center mb-3 sm:mb-0">
+                                    <div class="admin-checkbox flex items-center mb-3 sm:mb-0">
                                         <input
                                             id="comments"
                                             type="checkbox"
                                         >
                                         <label for="comments">Post, Comments & Replies Notifications</label>
                                     </div>
-                                    <div class="tp-checkbox flex items-center mb-3 sm:mb-0">
+                                    <div class="admin-checkbox flex items-center mb-3 sm:mb-0">
                                         <input
                                             id="order"
                                             type="checkbox"

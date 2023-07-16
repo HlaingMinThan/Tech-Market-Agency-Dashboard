@@ -24,25 +24,25 @@
     }
 }
 
-.tp-checkbox {
+.admin-checkbox {
     transform: translateY(-3px);
 }
 
-.tp-checkbox input {
+.admin-checkbox input {
     display: none;
 }
 
-.tp-checkbox input:checked ~ label::after {
+.admin-checkbox input:checked ~ label::after {
     background-color: #0989FF;
     border-color: #0989FF;
 }
 
-.tp-checkbox input:checked ~ label::before {
+.admin-checkbox input:checked ~ label::before {
     visibility: visible;
     opacity: 1;
 }
 
-.tp-checkbox label {
+.admin-checkbox label {
     font-size: 15px;
     color: #55585B;
     position: relative;
@@ -50,11 +50,11 @@
     z-index: 1;
 }
 
-.tp-checkbox label.text-tiny {
+.admin-checkbox label.text-tiny {
     font-size: 13px;
 }
 
-.tp-checkbox label::after {
+.admin-checkbox label::after {
     position: absolute;
     content: "";
     top: 4px;
@@ -73,7 +73,7 @@
     border-radius: 4px;
 }
 
-.tp-checkbox label::before {
+.admin-checkbox label::before {
     position: absolute;
     content: url("../img/product/icons/check.svg");
     top: 4px;
@@ -92,33 +92,33 @@
     transition: all 0.2s 0s ease-out;
 }
 
-.tp-checkbox label a:hover {
+.admin-checkbox label a:hover {
     color: #0989FF;
 }
 
-.tp-checkbox label:hover {
+.admin-checkbox label:hover {
     cursor: pointer;
 }
 
-.tp-checkbox-secondary input {
+.admin-checkbox-secondary input {
     display: none;
 }
 
-.tp-checkbox-secondary label {
+.admin-checkbox-secondary label {
     display: block;
 }
 
-.tp-checkbox-secondary input:checked ~ span::after {
+.admin-checkbox-secondary input:checked ~ span::after {
     background-color: #0989FF;
     border-color: #0989FF;
 }
 
-.tp-checkbox-secondary input:checked ~ span::before {
+.admin-checkbox-secondary input:checked ~ span::before {
     visibility: visible;
     opacity: 1;
 }
 
-.tp-checkbox-secondary span {
+.admin-checkbox-secondary span {
     font-size: 15px;
     color: #55585B;
     position: relative;
@@ -126,7 +126,7 @@
     z-index: 1;
 }
 
-.tp-checkbox-secondary span::after {
+.admin-checkbox-secondary span::after {
     position: absolute;
     content: "";
     top: 4px;
@@ -145,7 +145,7 @@
     border-radius: 4px;
 }
 
-.tp-checkbox-secondary span::before {
+.admin-checkbox-secondary span::before {
     position: absolute;
     content: url("../img/product/icons/check.svg");
     top: 4px;
@@ -164,11 +164,11 @@
     transition: all 0.2s 0s ease-out;
 }
 
-.tp-checkbox-secondary span a:hover {
+.admin-checkbox-secondary span a:hover {
     color: #0989FF;
 }
 
-.tp-checkbox-secondary span:hover {
+.admin-checkbox-secondary span:hover {
     cursor: pointer;
 }
 
