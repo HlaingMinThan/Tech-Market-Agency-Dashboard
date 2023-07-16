@@ -26,25 +26,6 @@ html, body {
   @apply bg-blue-500
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  @apply bg-transparent appearance-none border-none font-inherit text-base font-normal leading-normal cursor-pointer text-inherit text-transform-none
-}
-
-summary {
-  @apply list-item
-}
-
-ol,
-ul,
-li,
-menu {
- @apply list-none m-0 p-0
-}
-
 input::-moz-placeholder, textarea::-moz-placeholder {
   @apply text-[#9ca3af] 
   /* gray 400 color. */
@@ -68,15 +49,6 @@ abbr:where([title]) {
 a {
   @apply text-current no-underline
 }
-
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;
-}
-
 
 table {
   @apply text-indent-0 border-transparent border-collapse
