@@ -4,7 +4,7 @@
         >
             <div class="">
                 <div class="py-4 pb-8 px-8 border-b border-gray h-[78px]">
-                    <a href="index.html">
+                    <a href="/src/index.php">
                         <img
                             class="w-[140px]"
                             src="../../assets/img/logo/logo.svg"
@@ -100,25 +100,25 @@
                             >
                                 <li>
                                     <a
-                                        href="product-list.html"
+                                        href="/src/product-list.php"
                                         class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot"
                                     >Product List</a>
                                 </li>
                                 <li>
                                     <a
-                                        href="product-grid.html"
+                                        href="/src/product-grid.php"
                                         class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot"
                                     >Product Grid</a>
                                 </li>
                                 <li>
                                     <a
-                                        href="add-product.html"
+                                        href="/src/add-product.php"
                                         class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot"
                                     >Add Product</a>
                                 </li>
                                 <li>
                                     <a
-                                        href="edit-product.html"
+                                        href="/src/edit-product.php"
                                         class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot"
                                     >Edit Product</a>
                                 </li>
@@ -126,7 +126,7 @@
                         </li>
                         <li>
                             <a
-                                href="category.html"
+                                href="/src/category.php"
                                 class="group rounded-md relative text-black text-lg font-medium inline-flex items-center w-full transition-colors ease-in-out duration-300 px-5 py-[9px] mb-3 hover:bg-gray sidebar-link-active"
                             >
                                 <span class="inline-block translate-y-[1px] mr-[10px] text-xl">
@@ -265,13 +265,13 @@
                             >
                                 <li>
                                     <a
-                                        href="order-list.html"
+                                        href="/src/order-list.php"
                                         class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot"
                                     >Orders List</a>
                                 </li>
                                 <li>
                                     <a
-                                        href="order-details.html"
+                                        href="/src/order-details.php"
                                         class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot"
                                     >Order Details</a>
                                 </li>
