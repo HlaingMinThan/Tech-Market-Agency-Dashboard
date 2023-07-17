@@ -277,7 +277,7 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="transaction.html"
+                                        href="/src/transaction.php"
                                         class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot"
                                     >Transactions</a>
                                 </li>
@@ -307,7 +307,7 @@
                         </li>
                         <li>
                             <a
-                                href="coupon.html"
+                                href="/src/coupon.php"
                                 class="group rounded-md relative text-black text-lg font-medium inline-flex items-center w-full transition-colors ease-in-out duration-300 px-5 py-[9px] mb-3 hover:bg-gray sidebar-link-active"
                             >
                                 <span class="inline-block translate-y-[1px] mr-[10px] text-xl">
@@ -359,7 +359,7 @@
                         x-data="{moreNav:null}"
                     >
                         <a
-                            href="site-settings.html"
+                            href="/src/site-settings.php"
                             class="group rounded-md relative text-black text-lg font-medium inline-flex items-center w-full transition-colors ease-in-out duration-300 px-5 py-[9px] mb-3 hover:bg-gray sidebar-link-active"
                         >
                             <span class="inline-block translate-y-[1px] mr-[10px] text-xl">
